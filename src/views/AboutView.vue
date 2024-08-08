@@ -19,17 +19,7 @@
     data() {
       return {}
     },
-    mounted() {
-      window.addEventListener(
-        'message',
-        function (event) {
-          // 接收位置信息
-          var loc = event.data
-          console.log('location', loc)
-        },
-        false
-      )
-    },
+    mounted() {},
   }
 </script>
 <style scoped lang="less"></style>

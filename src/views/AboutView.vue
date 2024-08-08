@@ -1,5 +1,35 @@
+<!--  -->
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <iframe
+      id="geoPage"
+      width="100%"
+      height="400"
+      frameborder="0"
+      style="display: block"
+      scrolling="no"
+      src="https://apis.map.qq.com/tools/geolocation?key=NQ5BZ-N6ICW-UPFRE-O2UGM-P22AO-P3BYI&referer=myapp"
+    >
+    </iframe>
   </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {}
+    },
+    mounted() {
+      window.addEventListener(
+        'message',
+        function (event) {
+          // 接收位置信息
+          var loc = event.data
+          console.log('location', loc)
+        },
+        false
+      )
+    },
+  }
+</script>
+<style scoped lang="less"></style>

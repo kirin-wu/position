@@ -9,11 +9,15 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@antv/g6": "4.8.21",
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
@@ -25,6 +29,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "insert-css": "^2.0.0",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
     "prettier": "^2.4.1",

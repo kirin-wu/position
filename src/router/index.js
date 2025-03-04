@@ -23,6 +23,21 @@ const routes = [
     name: 'map',
     component: () => import(/* webpackChunkName: "about" */ '../views/TencentMap.vue'),
   },
+  {
+    path: '/bigScreen',
+    name: 'bigScreen',
+    component: () => import(/* webpackChunkName: "about" */ '../views/BigScreen.vue'),
+  },
+  {
+    path: '/pdf',
+    name: 'pdf',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PdfChaiView.vue'),
+  },
+  {
+    path: '/png',
+    name: 'png',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PngView.vue'),
+  },
 ]
 
 const router = new VueRouter({
